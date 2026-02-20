@@ -1,0 +1,4 @@
+{
+    "echoapi.documentServicePort": 5000,
+    "python.REPL.enableREPLSmartSend": false
+}

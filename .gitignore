@@ -1,0 +1,23 @@
+node_modules
+/venv
+/murf_panel/frontend/node_modules
+/murf_panel/frontend/.env.*
+/murf_panel/.env
+/murf_panel/murf_panel/__pycache__
+/murf_panel/frontend/__pycache__
+/murf_panel/shop_api/__pycache__
+/murf_panel/frontend/package-lock.json
+murf_panel/frontend/static/frontend/static
+murf_panel/frontend/static/frontend/main.js
+murf_panel/frontend/.env
+murf_panel/shop_api/views/__pycache__
+murf_panel/shop_api/models/__pycache__
+murf_panel/frontend/static/frontend
+
+package-lock.json
+murf_panel/shop_api/serializers/__pycache__
+murf_panel/shop_api/migrations/__pycache__
+# .github
+
+out/
+murf_panel/frontend/migrations/__pycache__/__init__.cpython-312.pyc

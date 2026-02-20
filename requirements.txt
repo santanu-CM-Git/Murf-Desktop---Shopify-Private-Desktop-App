@@ -1,0 +1,12 @@
+# Auto-generated
+Django
+djangorestframework
+djangorestframework-simplejwt
+django-environ
+ShopifyAPI
+requests
+pytz
+openpyxl
+pandas
+Spire.Xls
+plum-dispatch

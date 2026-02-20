@@ -1,0 +1,42 @@
+{
+  "name": "murf-desktop",
+  "productName": "Murf Desktop",
+  "version": "1.1.1",
+  "description": "A minimal export application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "npm run build && set GITHUB_TOKEN=G_TOKEn && electron-forge publish",
+    "dev": "npm run dev --workspace=murf_panel/frontend",
+    "build": "npm run build --workspace=murf_panel/frontend",
+    "venv": "..\\murf\\venv\\Scripts\\python.exe ..\\murf_desktop\\murf_panel\\manage.py runserver"
+  },
+  "repository": "https://github.com/codersmind/murf-desktop",
+  "keywords": [],
+  "author": "CODERSMIND",
+  "license": "CC0-1.0",
+  "workspaces": [
+    "murf_panel/frontend"
+  ],
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.0",
+    "@electron-forge/maker-deb": "^7.8.0",
+    "@electron-forge/maker-rpm": "^7.8.0",
+    "@electron-forge/maker-squirrel": "^7.8.1",
+    "@electron-forge/maker-zip": "^7.8.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.0",
+    "@electron-forge/plugin-fuses": "^7.8.0",
+    "@electron-forge/publisher-github": "^7.8.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^35.2.0"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron-log": "^5.3.4",
+    "electron-squirrel-startup": "^1.0.1",
+    "node-fetch": "^3.3.2",
+    "update-electron-app": "^3.1.1"
+  }
+}
