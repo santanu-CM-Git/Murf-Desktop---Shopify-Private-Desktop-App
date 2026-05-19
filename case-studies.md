@@ -1,54 +1,34 @@
-# Murf Electric Bikes (Desktop Application)
+# Murf Electric Bikes (Desktop Application) case study
 
-## About Project
+## About project
 
-- Murf Desktop is an Electron-based desktop application that integrates with Shopify stores to manage orders, employees, departments, account mappings, and export data to various formats including Excel and QuickBooks.
+Murf Desktop is an Electron-based desktop application that integrates with Shopify stores to manage orders, employees, departments, account mappings, and export data to Excel and QuickBooks.
 
-## Technology Stack
+## Problem
 
-- **Frontend**: React 19 with Redux Toolkit, React Router, TailwindCSS
-- **Backend**: Django REST Framework with JWT Authentication
-- **Desktop Framework**: Electron
-- **API Integration**: Shopify GraphQL/REST API
+Operations and finance teams running multiple Shopify stores face repetitive manual work: pulling orders and settlement-related data store by store, rebuilding pivot analyses in Excel, and posting month-end journal entries into QuickBooks without a repeatable, auditable pipeline from Shopify to the general ledger.
 
+## Technology stack
+
+- **Frontend:** React 19 with Redux Toolkit, React Router, TailwindCSS
+- **Backend:** Django REST Framework with JWT authentication
+- **Desktop framework:** Electron
+- **API integration:** Shopify GraphQL/REST API
 
 ## The client
 
-- An operations and finance group runs more than one Shopify store. They need a repeatable way to export orders and settlements-related data, analyze revenue and fees in Excel with pivot tables, and post summarized activity into QuickBooks as journal entries—without manual copy-paste for every store every month.
+An operations and finance group running more than one Shopify store. They need repeatable exports of orders and settlements-related data, Excel pivot analysis of revenue and fees, and summarized QuickBooks journal entries—without manual copy-paste for every store every month.
 
-## The Solution
+## The solution
 
-    1. Order Management
-    - Fetch orders from Shopify stores
-    - Filter orders by date, status, and other criteria
-    - View current month sales analytics
-    - Export orders to Excel format
-    - Export orders to QuickBooks format
-    - Sales analytics by city and product
+1. **Order management** — Fetch and filter orders; view current-month sales analytics; export to Excel and QuickBooks; sales analytics by city and product.
+2. **Employee management** — Assign employees to departments with paginated listings.
+3. **Shopify store integration** — Connect multiple stores, set a primary store, manage authentication.
+4. **Data export** — Excel and QuickBooks exports with custom formatting.
+5. **Analytics & charts** — Monthly sales, product pie charts, sales by city, dashboard metrics.
 
-    2. Employee Management
-    - Assign employees to departments
-    - Employee listing with pagination
+## Result
 
-
-    3. Shopify Store Integration
-    - Connect multiple Shopify stores
-    - Set primary store for operations
-    - Store authentication management
-
-    4. Data Export
-    - Export orders to Excel with custom formatting
-    - Export orders to QuickBooks format
-    - Custom formatting options
-
-    5. Analytics & Charts
-    - Monthly sales charts
-    - Product sales pie charts
-    - Sales by city bar charts
-    - Dashboard with key metrics
-
-
-## The results
-- Finance and operations could connect multiple Shopify stores in one place and get period-close exports on a fixed schedule, with clear file names and version history for easy tracking.
-- Analysts used Microsoft Excel pivot tables on the exported data to view revenue by store, product, payment gateway, and location without checking Shopify again for every new question.
-- Month-end journal entries in QuickBooks matched the Shopify orders and payouts after proper mapping and checking—saving time, reducing manual entries, and keeping a clear record from export to final entry.
+- Finance and operations connect multiple Shopify stores in one place and run period-close exports on a fixed schedule with clear file names and version history.
+- Analysts use Excel pivot tables on exported data for revenue by store, product, gateway, and location without re-querying Shopify for every question.
+- Month-end QuickBooks journal entries align with Shopify orders and payouts after mapping and checks—less manual entry and a clear trail from export to posted entry.
